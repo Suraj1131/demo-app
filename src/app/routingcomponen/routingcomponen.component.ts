@@ -40,8 +40,6 @@ export class RoutingcomponenComponent {
 
 
   onSubmit() {
-    // Handle form submission
-   
     console.log(this.registrationForm.value);
     this.appservice.saveFormData(this.registrationForm.value).subscribe({
       next:(result)=>{
@@ -54,34 +52,14 @@ export class RoutingcomponenComponent {
     
   }
 
-
   
-
-
-
-  /*toggleTagline(sport: string): void {
-    const tagline: HTMLElement | null = document.getElementById('tagline');
-    const taglineText: string | null = tagline?.textContent ?? null;
-
-    if (tagline && taglineText) {
-      if (taglineText.includes(sport)) {
-        tagline.textContent = taglineText.replace(sport + ", ", "");
-      } else {
-        tagline.textContent += sport + ", ";
-      }
-    }
-  }*/
   toggleTagline(sport: string) {
     if (this.tagline.includes(sport)) {
       this.tagline = this.tagline.replace(sport + ', ', '');
     } else {
       this.tagline += sport + ', ';
     }
-  }
-
-  
-
-  
+  }  
 
   setupEventListeners(): void {
     document.getElementById("image")?.addEventListener("change", (e: Event) => {
@@ -90,11 +68,7 @@ export class RoutingcomponenComponent {
         preview.src = URL.createObjectURL((e.target as HTMLInputElement).files![0]);
       }
     });
-
-    
   }
-
-  
 
   onFileSelected(event:any) {
     const file = event.target.files[0];
@@ -106,15 +80,9 @@ export class RoutingcomponenComponent {
       };
       reader.readAsDataURL(file);
     }
-  }
-
-
- 
-
-  
-   
-  
+  } 
 }
+
 function displayImage(imageUrl: string | ArrayBuffer) {
   const imgElement = document.getElementById("displayImg") as HTMLImageElement;
   imgElement.src = imageUrl.toString();

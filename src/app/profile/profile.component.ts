@@ -20,9 +20,7 @@ export class ProfileComponent {
   tags: any;
   newsletter: any;
 
-  constructor(private AppService:AppService){
-
-  }
+  constructor(private AppService:AppService){}
 
   ngOnInit(){
     this.getDataFromAPI();
