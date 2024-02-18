@@ -2,7 +2,7 @@
     /* background:url("../assets/images/banner.jpg")no-repeat; */
     background-size:cover;
     min-height:150px;
-    background-color: #007bff;
+    background-color: #5ea3ee;
 }
 .logo{
     float:left;
@@ -39,6 +39,7 @@
      color:#fff;
      font-size:14px;
      font-weight:550;
+     text-decoration:none;
 }
 .header-navg ul li a:hover,.header-navg ul li a.active{
      color:#fff;
@@ -49,4 +50,22 @@
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     font-weight: 550;
+}
+h2{
+    margin-left: 260px;
+    margin-top: 50px;
+    color: rgb(49, 189, 236);
+}
+.p{
+    margin-left: 260px;
+    margin-top: 30px;
+    margin-right: 300px;
+    font-size: larger;
+}
+button{
+    background-color: rgb(42, 179, 42);
+    color: white;
+    padding: 7px;
+    width: 110px;
+    border: 1px solid rgb(42, 179, 42);
 }

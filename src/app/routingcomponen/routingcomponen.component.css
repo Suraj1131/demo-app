@@ -8,7 +8,6 @@
     margin-bottom: 5px;
 }
 .input  {
-    /* width: 100%;*/
     padding: 10px;
     
     border: 1px solid #ccc;
@@ -21,7 +20,6 @@ padding: 10px;
 border-radius: 5px;
 }
 .textarea{
-    /* width: 100%;*/
     padding: 10px;
     height: 40px;
     border: 1px solid #ccc;
@@ -219,6 +217,7 @@ html, body{
       color:#fff;
       font-size:14px;
       font-weight:400;
+      text-decoration:none;
  }
  .header-navg ul li a:hover,.header-navg ul li a.active{
       color:#fff;
